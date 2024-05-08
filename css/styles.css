@@ -42,8 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 112, 0, 209;
+  --bs-secondary-rgb: 112, 0, 209;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -10848,7 +10848,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 h1, .h1 {
@@ -10861,10 +10861,15 @@ p.lead {
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.5rem;
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans-tc-<uniquifier> {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 }
 
 #sideNav {
